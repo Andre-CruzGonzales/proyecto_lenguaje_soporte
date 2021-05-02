@@ -6,46 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DONAQP</title>
     <link rel="icon" type="image/jpg" href="imagenes/logo_size.jpg" />
+    <link rel="stylesheet" type="text/css" href="estilos/estilo_index.css">
 
 </head>
-<body style="background-color: #F8F8F8;">
+<body>
     <header>
         <nav>
-            <div style="background-color: #404044;">
-                <img src="imagenes/logo_black.png" alt="logo_black" height="40px" width="70px"/>
-                <ul style="list-style: none; color:white">
-                    <li>
-                        <a style="text-decoration: none; color:white" href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a style="text-decoration: none; color:white" href="#albergues">Albergues</a>
-                    </li>
-                    <li>
-                        <a style="text-decoration: none; color:white" href="#quienes_somos">Quienes Somos</a>
-                    </li>
-                    
-                    
-                </ul>    
+            <div class="navegar">
+                <div class="navegar-logo">
+                    <img src="imagenes/logo_black.png" alt="logo_black" height="40px" width="70px"/>
+                </div>
+                <div class="navegar-url">
+                    <ul class="navegar-ul">
+                        <li>
+                            <a class="navegar-a" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a class="navegar-a" href="#albergues">Albergues</a>
+                        </li>
+                        <li>
+                            <a class="navegar-a" href="#quienes_somos">Quienes Somos</a>
+                        </li>
+                        
+                        
+                    </ul>    
+                </div>
             </div>
             
         </nav>
     </header>
 
     <main>
-        <section id="Home" style="background-color: #4C5AFB; color:white; height: 100vh;">
-            <h1 style="text-align: center;">DONAQP</h1>
-            <p>Donaqp es una página realizada por alumnos del instituto Certus buscando 
-                ayudar a los distintos albergues de la ciudad de Arequipa en sus donativos</p>
-            <img src="imagenes/logo_white.jpg" alt="logo_white" height="200px" width="800px"/>
+        <section id="Home" class="logo">
+            <div>
+                <h1 class="logo-title">DONAQP</h1>
+                <p class="logo-text">Donaqp es una página realizada por alumnos del instituto Certus buscando 
+                    ayudar a los distintos albergues de la ciudad de Arequipa en sus donativos</p>
+            </div>
+            <div>
+                <img src="imagenes/logo_white.jpg" alt="logo_white" height="200px" width="800px"/>
+            </div>
+            
         </section>
-        <section id="albergues">
-            <div style="border:1px solid black ">
+        <section id="albergues" class="albergues">
+            <div class="albergue" >
                 <h3>Aldea Infantil Sagrada Familia</h3>
                 <img src="imagenes/imagen1.png" alt="imagen_aldeas"/>
                 <p>El director de la Aldea Sagrada Familia pertenece a la Congregación Misionera de San Pablo, fundada en la Isla mediterránea de Malta. El fundador, Monseñor José de Piro, dio mucha importancia a sus misioneros en el amor hacia los marginados especialmente a los niños.</p>
                 <a href="">Leer más</a>
             </div>
-            <div style="border:1px solid black ">
+            <div class="albergue">
                 <h3>Albergue de los perros abandonados Arequipa</h3>
                 <img src="imagenes/logo_albergue_perritos.jpg" alt="imagen_aldeas" width="200px"/>
                 <p>El director de la Aldea Sagrada Familia pertenece a la Congregación Misionera de San Pablo, fundada en la Isla mediterránea de Malta. El fundador, Monseñor José de Piro, dio mucha importancia a sus misioneros en el amor hacia los marginados especialmente a los niños.</p>
@@ -54,77 +64,95 @@
             
         </section>
         <section id="quienes_somos">
-            <div>
-                <h2 style="text-align: center;">QUIENES SOMOS</h2>
-                <h3>Somos el Grupo <span style="color:#4C5AFB">DECODERS</span></h3>
-                <p>Somos estudiantes del curso de lenguajes de soporte de sistemas del  primer año del instituto Certus.</p>
+            <div class="nuestro_grupo">
+                <div>
+                    <h2 class="nuestro_grupo-title">QUIENES SOMOS</h2>
+                    <h3>Somos el Grupo <span style="color:#4C5AFB">DECODERS</span></h3>
+                    <p class="nuestro_grupo-text">Somos estudiantes del curso de lenguajes de soporte de sistemas del  primer año del instituto Certus.</p>
+                </div>
+                
                 <img src="imagenes/Imagen_decoders.png" alt="imagen_quienes_somos" width="300px"/>
             </div>
-            <div>
-                <h2 style="text-align: center;">Nuestro Equipo</h2>
-                <div style="border:1px solid black">
-                    <img src="imagenes/avatar.png" alt="avatar"/>
-                    <h3>André Cruz Gonzales</h3>
-                    <p>Estudiante de Certus</p>
-                    <p>edad 26 años</p>
-                </div>
-                <div style="border:1px solid black">
-                    <img src="imagenes/avatar.png" alt="avatar"/>
-                    <h3>Jean Pierre Aranda Rejas</h3>
-                    <p>Estudiante de Certus</p>
-                    <p>edad 26 años</p>
-                </div>
-                <div style="border:1px solid black">
-                    <img src="imagenes/avatar.png" alt="avatar"/>
-                    <h3>Nataly Paredes Velazco</h3>
-                    <p>Estudiante de Certus</p>
-                    <p>edad 26 años</p>
+            <div class="nuestro_equipo">
+                <h2>Nuestro Equipo</h2>
+                <div class="equipos">
+                    <div class="equipo">
+                        <img src="imagenes/avatar.png" alt="avatar"/>
+                        <h3>André Cruz Gonzales</h3>
+                        <p>Estudiante de Certus</p>
+                        <p>edad 26 años</p>
+                    </div>
+                    <div class="equipo">
+                        <img src="imagenes/avatar.png" alt="avatar"/>
+                        <h3>Jean Pierre Aranda Rejas</h3>
+                        <p>Estudiante de Certus</p>
+                        <p>edad 26 años</p>
+                    </div>
+                    <div class="equipo">
+                        <img src="imagenes/avatar.png" alt="avatar"/>
+                        <h3>Nataly Paredes Velazco</h3>
+                        <p>Estudiante de Certus</p>
+                        <p>edad 26 años</p>
+                    </div>
+                    <div class="equipo">
+                        <img src="imagenes/avatar.png" alt="avatar"/>
+                        <h3>Nataly Paredes Velazco</h3>
+                        <p>Estudiante de Certus</p>
+                        <p>edad 26 años</p>
+                    </div>
+                    <div class="equipo">
+                        <img src="imagenes/avatar.png" alt="avatar"/>
+                        <h3>Nataly Paredes Velazco</h3>
+                        <p>Estudiante de Certus</p>
+                        <p>edad 26 años</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <footer>
-
-        </footer>
+        
     </main>
-    <footer style="background-color: #404044; color:white;">
+    <footer class="footer">
         <div>
             <img src="imagenes/logo_black.png">
-            <div>
-                <p>Contactanos</p>
-                <ul style="list-style: none;">
-                    <li>2164 Wall St, New York</li>
-                    <li>NY 10122, USA</li>
-                    <li>info@demolink.org+1 800 123 45 67</li>
-                </ul>
+            <div class="footer-direccion footer-contactanos">
+                <div>
+                    <p>Contactanos</p>
+                    <ul class="footer-ul">
+                        <li>2164 Wall St, New York</li>
+                        <li>NY 10122, USA</li>
+                        <li>info@demolink.org+1 800 123 45 67</li>
+                    </ul>
+                </div>
+                <div class="">
+                    <p>Links</p>
+                    <ul class="footer-ul">
+                        <li>
+                            <a style="text-decoration: none;color:white;" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a style="text-decoration: none;color:white;" href="#albergues">Albergues</a>
+                        </li>
+                        <li>
+                            <a style="text-decoration: none;color:white;" href="#quienes_somos">Quienes Somos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Ubícanos también en:</p>
+                    <ul class="footer-ul">
+                        <li>
+                            <img src="imagenes/facebook.png" alt="link_facebook" width="25px"/>
+                        </li>
+                        <li>
+                            <img src="imagenes/twitter.png" alt="link_twitter" width="25px"/>
+                        </li>
+                        <li>
+                            <img src="imagenes/instagram.png" alt="link_instagram" width="25px"/>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <p>Links</p>
-                <ul style="list-style: none;">
-                    <li>
-                        <a style="text-decoration: none;color:white;" href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a style="text-decoration: none;color:white;" href="#albergues">Albergues</a>
-                    </li>
-                    <li>
-                        <a style="text-decoration: none;color:white;" href="#quienes_somos">Quienes Somos</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <p>Ubícanos también en:</p>
-                <ul style="list-style: none;">
-                    <li>
-                        <img src="imagenes/facebook.png" alt="link_facebook" width="25px"/>
-                    </li>
-                    <li>
-                        <img src="imagenes/twitter.png" alt="link_twitter" width="25px"/>
-                    </li>
-                    <li>
-                        <img src="imagenes/instagram.png" alt="link_instagram" width="25px"/>
-                    </li>
-                </ul>
-            </div>
+            
             
         </div>
     </footer>
