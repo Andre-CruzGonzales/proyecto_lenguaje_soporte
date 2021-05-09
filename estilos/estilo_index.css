@@ -1,13 +1,33 @@
+*{
+    padding:0 0 0 0;
+    margin: 0 0 0 0;
+}
 body{
-    background-color: #ebd9d9;
+    background-color: #f8f8f8;
 }
 .navegar{
     background-color: #404044;
-    display:flex;
+    clear:both;
+    overflow:auto;
+}
+.navegar-ul li{
+    
+    display: inline;
+    padding-right: 20px;
+}
+.navegar-ul li a:hover{
+    font-size:17px;
 }
 .navegar-ul{
+    margin-top:10px;
     list-style: none;
     color:white;
+}
+.navegar-logo{
+    float:left;
+}
+.navegar-url{
+    float:right;
 }
 .navegar-a{
     text-decoration: none; 
@@ -32,6 +52,7 @@ body{
     width:20%;
     margin-right: 20px;
     margin-top: 20px;
+    margin-left: 20px;
 }
 .albergues{
     display:flex;
