@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #F8F8F8;
+}
+body{
+    background-color: #F8F8F8;
+}
+
+.parrafo {
+    margin: center;
+    padding: auto;
+    width: 100%;
+    height: 100%;
+    background: #F8F8F8;
+
+}
+.header {
+    width: 600 px;
+    background: #F8F8F8;
+}
+
