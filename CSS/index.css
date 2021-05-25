@@ -32,13 +32,13 @@ header {
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
-header .header-icons-container {
+header .header-menu-container {
     width: 100%;
     height: 50px;
     display: grid;
     background-color: #404044;
 }
-header .header-icons-container .icons {
+header .header-menu-container .menus {
     width: 300px;
     height: auto;
     display: flex;
@@ -48,7 +48,7 @@ header .header-icons-container .icons {
     justify-self: end;
     margin-right: 50px;
 }
-header .icons span {
+header .menus span {
     color: white;
 }
 .home-main {
@@ -86,22 +86,22 @@ header .icons span {
     line-height: 50px;
 }
 
-.blogs-main {
+.main {
     display: grid;
 }
-.blogs-news-container {
+.news-container {
     background-color: #4C5AFB;
     padding: 0 50px 40px;
 }
-.blogs-main-new {
+.main-new {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr;
 }
-.blogs-news-img-container {
+.news-img-container {
     grid-column: 1;
 }
-.blogs-news-img-container img {
+.news-img-container img {
     margin-top:20px;
     width: 85%;
     height: 100%;
@@ -109,36 +109,36 @@ header .icons span {
 .quienes_somos img{
     width: 50%;
 }
-.blogs-news-info-container {
+.news-info-container {
     grid-column: 2;
 }
-.blogs-news-info-container p {
+.news-info-container p {
     margin-bottom: 35px;
 }
-.blogs-posts-container {
+.posts-container {
     padding: 0 50px 40px;
 }
-.blogs-posts-container h3 {
+.posts-container h3 {
     border-bottom: 1px solid #cdd2da;  
     padding-bottom: 20px;
     text-align: center;
 }
-.blogs-button {
+.button {
     border: 1px solid #4C5AFB;
     padding: 10px 15px;
     font-size: 12px;
     color:black;
 }
-.blogs-posts-container .post-container {
+.posts-container .post-container {
     display: inline-block;
     padding-left: 10px;
     max-width: 30%;
     margin-bottom: 50px;
 }
-.blogs-posts-container .post-container p {
+.posts-container .post-container p {
     margin-bottom: 35px;
 }
-.blogs-posts-container .post-container img {
+.posts-container .post-container img {
     width: 100%;
 }
 
@@ -157,22 +157,6 @@ footer p {
     margin-top: 30px;
 }
 
-.blogpost-img-container {
-    padding: 0 50px 40px;
-}
-.blogpost-img-container img {
-    width: 100%;
-}
-.blogpost-main-container {
-    padding: 0 50px 40px;
-}
-.blogpost-main-container h3 {
-    border-bottom: 1px solid #cdd2da;
-    padding-bottom: 20px;
-}
-.blogpost-main-container article h1 {
-    font-size: 35px;
-}
 
 .contact-main-container {
     width: 100%;
