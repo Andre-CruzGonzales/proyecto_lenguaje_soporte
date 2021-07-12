@@ -1,0 +1,106 @@
+*{
+    padding:0 0 0 0;
+    margin: 0 0 0 0;
+}
+body{
+    background-color: #f8f8f8;
+}
+.navegar{
+    background-color: #404044;
+    clear:both;
+    overflow:auto;
+}
+.navegar-ul li{
+    
+    display: inline;
+    padding-right: 20px;
+}
+.navegar-ul li a:hover{
+    font-size:17px;
+}
+.navegar-ul{
+    margin-top:10px;
+    list-style: none;
+    color:white;
+}
+.navegar-logo{
+    float:left;
+}
+.navegar-url{
+    float:right;
+}
+.navegar-a{
+    text-decoration: none; 
+    color:white;
+}
+.logo{
+    background-color: #4C5AFB;
+    color:white; 
+    height: 50vh;
+    display:flex;
+}
+.logo-title{
+    text-align: center;
+    font-size:50px
+}
+.logo-text{
+    font-size:20px;
+}
+.albergue{
+    border:1px solid black;
+    text-align: center;
+    width:20%;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.albergues{
+    display:flex;
+}
+h2{
+    text-align: center;
+}
+.equipo{
+    text-align: center;
+    border:1px solid black;
+    width: 15%;
+}
+.equipos{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+.nuestro_equipo{
+    margin-bottom: 40px;
+}
+.nuestro_grupo{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top:40px;
+    justify-content: space-between;
+    
+}
+.nuestro_grupo-title{
+    font-size:40px;
+}
+.nuestro_grupo-text{
+    font-size: 20px;
+}
+.footer{
+    background-color: #404044; 
+    color:white;
+    font-size: 20px;
+}
+.footer-ul{
+    list-style: none;
+}
+.navegar-url{
+    display:flex;
+}
+.footer-direccion{
+    display:flex;
+    justify-content: space-between;
+}
+.footer-contactanos{
+    margin-left: 40px;
+}

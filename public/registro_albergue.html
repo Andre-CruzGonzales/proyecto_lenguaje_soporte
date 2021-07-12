@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link href="css/login.css" rel="stylesheet">
+    <title>ALBERGUES</title>
+</head>
+<body>
+    <section class="body">
+        <div>
+            <div class="login-center">
+                <div class="card">
+                    <div class="card-header bg-primary">
+                        <div class="text-center">
+                            <img src="img/dona aqp.png" alt="logo" width="100px">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <form action="" method="post">
+                            
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" required autocomplete="off">
+                                <label>ALBERGUE</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" required autocomplete="off">
+                                <label>DESCRIPCION</label>
+                            </div>
+                            <div class="form-floating mb-3" id="anadir">
+
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="file" class="form-control" required autocomplete="off">
+                                <label>IMAGEN PRINCIPAL</label>
+                            </div>
+                            <div class="d-grid">
+                                <button type="button" class="btn btn-primary mb-3" onclick="añadir()">añadir descripcion</button>
+                                <a href="login.html" class="btn btn-danger">Cancelar</a>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    function añadir(){
+        //var nodo= '<input type="text" class="form-control" required autocomplete="off"><label>DESCRIPCION</label>';
+        var div=document.createElement("div");
+        div.classList.toggle("form-floating");
+        div.classList.toggle("mb-3");
+        var nodo= document.createElement("input");
+        nodo.classList.toggle('form-control');
+        var label= document.createElement("label");
+        label.innerHTML="DESC";
+        div.appendChild(nodo);
+        div.appendChild(label);
+
+        document.getElementById("anadir").appendChild(div);
+    }
+</script>
+</html>
