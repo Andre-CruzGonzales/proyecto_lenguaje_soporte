@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS/formulariofinal.css">
+    
+    <title>Formulario de creacion</title>
+</head>
+<body>
+    <section class="">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">DONAQP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="lista_usuarios.html">Usuarios</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="formulariodonativos.html">Registro Donativo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="formulariobeneficencias.html">Registro Beneficiencia</a>
+                </li>
+                
+              </ul>
+              
+            </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Usuario@usuario.com
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="login.html">Cerrar Sesión</a></li>
+                      
+                    </ul>
+                  </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+      
+    <form action="enviar.php" method="post" class="formulario">
+        <h1 class="formulario__titulo">Tu donativo</h1>
+        <input type="text" name="Nombres"class="formulario__input" required>
+        <label for="" class="formulario__label">Nombres</label>
+        <input type="text" name="Apellidos" class="formulario__input" required>
+        <label for="" class="formulario__label">Apellidos</label>
+        <input type="text" name="Beneficencia" class="formulario__input" required>
+        <label for="" class="formulario__label">Beneficencia para donar</label>
+        <input type="text" name="Monto" class="formulario__input" required>
+        <label for="" class="formulario__label">Monto a donar</label>
+        <input type="text" name="RUC" class="formulario__input" required>
+        <label for="" class="formulario__label">RUC de la Beneficencia</label>
+        <input type="text" name="Mensaje" class="formulario__input" required>
+        <label for="" class="formulario__label">Mensaje de tu donacion</label>
+        <input type="submit" value="ENVIAR" id="boton">
+    </form>
+    <script src="/js/forfina.js"></script>
+</body>
+</html>

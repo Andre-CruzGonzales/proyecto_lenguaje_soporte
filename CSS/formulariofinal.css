@@ -74,7 +74,7 @@ body{
 #boton:hover {
     cursor: pointer;
 }
-@media (max-width:500px)
+@media (max-width:500px){
     .formulario{
         width: 100%;
     }
@@ -85,7 +85,5 @@ body{
     font-size: 150px;
     background: rgba(0,0,0,0.4);
 }
-
-/*h1{
-    color: black;
 }
+
