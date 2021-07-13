@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/formulariofinal.css">
+    <title>Formulario de creacion</title>
+</head>
+<body>
+    <form action="" class="formulario">
+        <h1 class="formulario__titulo">Publicar tu beneficencia</h1>
+        <input type="text" class="formulario__input">
+        <label for="" class="formulario__label">Nombres</label>
+        <input type="text" class="formulario__input">
+        <label for="" class="formulario__label">Apellidos</label>
+        <input type="text" class="formulario__input">
+        <label for="" class="formulario__label">Nombre de tu beneficencia</label>
+        <input type="text" class="formulario__input">
+        <label for="" class="formulario__label">Distrito de la Beneficencia</label>
+        <input type="text" class="formulario__input">
+        <label for="" class="formulario__label">RUC de la Beneficencia</label>
+        <input type="text" class="formulario__input">
+        <label for="" class="formulario__label">Certificado de inscripción SUNAT</label>
+        <div id="cajas">Sobre tu organizacion: <input type=text name=caja1 class="formulario__input"><br>Sobre tu organizacion: <input type=text name=caja2 class="formulario__input"><br></div>
+        <input type=button class="formulario__input" onclick="agregar_caja()" value="Agregar caja">
+        <input type="submit" value="ENVIAR" id="boton">
+    </form>
+    <script src="/js/forfina.js"></script>
+    <script>
+        var cajas=2;
+        function agregar_caja(){
+        document.getElementById("cajas").innerHTML+="Caja "+new Number(cajas+1)+": <input type=text name='caja"+new String(cajas+1)+"'><br>"
+        cajas=cajas+1
+        }</script>
+</body>
+</html>

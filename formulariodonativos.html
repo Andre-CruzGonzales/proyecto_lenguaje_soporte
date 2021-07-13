@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/formulariofinal.css">
+    <title>Formulario de creacion</title>
+</head>
+<body>
+    <form action="enviar.php" method="post" class="formulario">
+        <h1 class="formulario__titulo">Tu donativo</h1>
+        <input type="text" name="Nombres"class="formulario__input" required>
+        <label for="" class="formulario__label">Nombres</label>
+        <input type="text" name="Apellidos" class="formulario__input" required>
+        <label for="" class="formulario__label">Apellidos</label>
+        <input type="text" name="Beneficencia" class="formulario__input" required>
+        <label for="" class="formulario__label">Beneficencia para donar</label>
+        <input type="text" name="Monto" class="formulario__input" required>
+        <label for="" class="formulario__label">Monto a donar</label>
+        <input type="text" name="RUC" class="formulario__input" required>
+        <label for="" class="formulario__label">RUC de la Beneficencia</label>
+        <input type="text" name="Mensaje" class="formulario__input" required>
+        <label for="" class="formulario__label">Mensaje de tu donacion</label>
+        <input type="submit" value="ENVIAR" id="boton">
+    </form>
+    <script src="/js/forfina.js"></script>
+</body>
+</html>

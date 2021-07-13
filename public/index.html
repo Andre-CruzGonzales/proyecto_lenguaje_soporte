@@ -7,7 +7,9 @@
     <title>DONAQP</title>
     <link rel="icon" type="image/jpg" href="img/logo_size.jpg" />
     <link rel="stylesheet" type="text/css" href="css/estilo_index.css">
-
+    <link rel="stylesheet" href="CSS/foro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -55,13 +57,17 @@
                 <h3>Aldea Infantil Sagrada Familia</h3>
                 <img src="img/imagen1.png" alt="imagen_aldeas"/>
                 <p>El director de la Aldea Sagrada Familia pertenece a la Congregación Misionera de San Pablo, fundada en la Isla mediterránea de Malta. El fundador, Monseñor José de Piro, dio mucha importancia a sus misioneros en el amor hacia los marginados especialmente a los niños.</p>
-                <a href="">Leer más</a>
+                <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    ver comentarios
+                  </button>
             </div>
             <div class="albergue">
                 <h3>Albergue de los perros abandonados Arequipa</h3>
                 <img src="img/logo_albergue_perritos.jpg" alt="imagen_aldeas" width="200px"/>
                 <p>El director de la Aldea Sagrada Familia pertenece a la Congregación Misionera de San Pablo, fundada en la Isla mediterránea de Malta. El fundador, Monseñor José de Piro, dio mucha importancia a sus misioneros en el amor hacia los marginados especialmente a los niños.</p>
-                <a href="">Leer más</a>
+                <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    ver comentarios
+                  </button>
             </div>
             
         </section>
@@ -158,5 +164,160 @@
             
         </div>
     </footer>
+    <section class="modals">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Comentarios</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="comments-container">
+                        <div>
+                            <form action="">
+                                <div class="form-group" >
+                                    <label for="">Nombre:</label>
+                                    <input type="text" class="form-control" id="usuario" >
+                                </div>
+                                <div class="form-group" >
+                                    <label for="">Deja tu comentario</label>
+                                    <input type="text" class="form-control" id="comentarios" >
+                                </div>
+                                <br>
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" onclick="anadir()">agregar comentario</button>
+                            </form>
+                        </div>
+                        <h1>Comentarios</h1>
+                
+                        <ul id="comments-list" class="comments-list">
+                            <li>
+                                <div class="comment-main-level">
+                                    <!-- Avatar -->
+                                    <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
+                                    <!-- Contenedor del Comentario -->
+                                    <div class="comment-box">
+                                        <div class="comment-head">
+                                            <h6 class="comment-name by-author">Adso</a></h6>
+                                            <span>hace 20 minutos</span>
+                                            <i class="fa fa-reply"></i>
+                                            <i class="fa fa-heart"></i>
+                                        </div>
+                                        <div class="comment-content">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Respuestas de los comentarios -->
+                                <ul class="comments-list reply-list">
+                                    <li>
+                                        <!-- Avatar -->
+                                        <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+                                        <!-- Contenedor del Comentario -->
+                                        <div class="comment-box">
+                                            <div class="comment-head">
+                                                <h6 class="comment-name">Nataly</a></h6>
+                                                <span>hace 10 minutos</span>
+                                                <i class="fa fa-reply"></i>
+                                                <i class="fa fa-heart"></i>
+                                            </div>
+                                            <div class="comment-content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                            </div>
+                                        </div>
+                                    </li>
+                
+                                    <li>
+                                        <!-- Avatar -->
+                                        <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
+                                        <!-- Contenedor del Comentario -->
+                                        <div class="comment-box">
+                                            <div class="comment-head">
+                                                <h6 class="comment-name by-author">Adso</a></h6>
+                                                <span>hace 10 minutos</span>
+                                                <i class="fa fa-reply"></i>
+                                                <i class="fa fa-heart"></i>
+                                            </div>
+                                            <div class="comment-content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                
+                            <li>
+                                <div class="comment-main-level">
+                                    <!-- Avatar -->
+                                    <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+                                    <!-- Contenedor del Comentario -->
+                                    <div class="comment-box">
+                                        <div class="comment-head">
+                                            <h6 class="comment-name">Nataly</a></h6>
+                                            <span>hace 10 minutos</span>
+                                            <i class="fa fa-reply"></i>
+                                            <i class="fa fa-heart"></i>
+                                        </div>
+                                        <div class="comment-content">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="anadir">
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
 </body>
+<script>
+    function anadir(){
+        
+        var div_head=document.createElement("div");
+        div_head.classList.toggle("comment-main-level");
+        var img=document.createElement('img');
+        img.src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg";
+        var div=document.createElement('div');
+        div.classList.toggle("comment-avatar");
+        var div2=document.createElement('div');
+        div2.classList.toggle('comment-box');
+        var div3 = document.createElement('div');
+        div3.classList.toggle('comment-head');
+        var h6=document.createElement("h6");
+        h6.innerHTML=document.getElementById('usuario').value;
+        var span=document.createElement('span');
+        span.innerHTML="ahora";
+        var i1=document.createElement('i');
+        i1.classList.toggle("fa");
+        i1.classList.toggle("fa-reply");
+        var i2=document.createElement('i');
+        i2.classList.toggle("fa");
+        i2.classList.toggle("fa-heart");
+        var div4=document.createElement('div');
+        div4.classList.toggle("comment-content");
+        div4.innerHTML=document.getElementById('comentarios').value;
+
+        div_head.appendChild(div);
+        div.appendChild(img);
+        div_head.appendChild(div2);
+        div2.appendChild(div3);
+        div3.appendChild(h6);
+        div3.appendChild(span);
+        div3.appendChild(i1);
+        div3.appendChild(i2);
+        div2.appendChild(div4);
+        document.getElementById("anadir").appendChild(div_head);
+        
+    }
+</script>
 </html>
