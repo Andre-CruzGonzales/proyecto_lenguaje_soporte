@@ -177,11 +177,16 @@
                         <div>
                             <form action="">
                                 <div class="form-group" >
-                                    <label for="">Deja tu comentario</label>
-                                    <input type="text" class="form-control" >
+                                    <label for="">Nombre:</label>
+                                    <input type="text" class="form-control" id="usuario" >
                                 </div>
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                                <div class="form-group" >
+                                    <label for="">Deja tu comentario</label>
+                                    <input type="text" class="form-control" id="comentarios" >
+                                </div>
+                                <br>
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" onclick="anadir()">agregar comentario</button>
                             </form>
                         </div>
                         <h1>Comentarios</h1>
@@ -239,6 +244,7 @@
                                             </div>
                                         </div>
                                     </li>
+                                    
                                 </ul>
                             </li>
                 
@@ -260,6 +266,9 @@
                                     </div>
                                 </div>
                             </li>
+                            <li id="anadir">
+
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -271,4 +280,44 @@
           </div>
     </section>
 </body>
+<script>
+    function anadir(){
+        
+        var div_head=document.createElement("div");
+        div_head.classList.toggle("comment-main-level");
+        var img=document.createElement('img');
+        img.src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg";
+        var div=document.createElement('div');
+        div.classList.toggle("comment-avatar");
+        var div2=document.createElement('div');
+        div2.classList.toggle('comment-box');
+        var div3 = document.createElement('div');
+        div3.classList.toggle('comment-head');
+        var h6=document.createElement("h6");
+        h6.innerHTML=document.getElementById('usuario').value;
+        var span=document.createElement('span');
+        span.innerHTML="ahora";
+        var i1=document.createElement('i');
+        i1.classList.toggle("fa");
+        i1.classList.toggle("fa-reply");
+        var i2=document.createElement('i');
+        i2.classList.toggle("fa");
+        i2.classList.toggle("fa-heart");
+        var div4=document.createElement('div');
+        div4.classList.toggle("comment-content");
+        div4.innerHTML=document.getElementById('comentarios').value;
+
+        div_head.appendChild(div);
+        div.appendChild(img);
+        div_head.appendChild(div2);
+        div2.appendChild(div3);
+        div3.appendChild(h6);
+        div3.appendChild(span);
+        div3.appendChild(i1);
+        div3.appendChild(i2);
+        div2.appendChild(div4);
+        document.getElementById("anadir").appendChild(div_head);
+        
+    }
+</script>
 </html>
