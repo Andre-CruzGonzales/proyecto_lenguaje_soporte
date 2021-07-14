@@ -195,7 +195,7 @@
                             <li>
                                 <div class="comment-main-level">
                                     <!-- Avatar -->
-                                    <div class="comment-avatar"><img src="img/avatar_1.png" alt=""></div>
+                                    <div class="comment-avatar"><img src="img/avatar_1.png" width="100px" alt=""></div>
                                     <!-- Contenedor del Comentario -->
                                     <div class="comment-box">
                                         <div class="comment-head">
@@ -213,7 +213,7 @@
                                 <ul class="comments-list reply-list">
                                     <li>
                                         <!-- Avatar -->
-                                        <div class="comment-avatar"><img src="img/fem.jpg" alt=""></div>
+                                        <div class="comment-avatar"><img src="img/fem.jpg" width="100px" alt=""></div>
                                         <!-- Contenedor del Comentario -->
                                         <div class="comment-box">
                                             <div class="comment-head">
@@ -230,7 +230,7 @@
                 
                                     <li>
                                         <!-- Avatar -->
-                                        <div class="comment-avatar"><img src="img/avatar_1.png" alt=""></div>
+                                        <div class="comment-avatar"><img src="img/avatar_1.png"  width="100px" alt=""></div>
                                         <!-- Contenedor del Comentario -->
                                         <div class="comment-box">
                                             <div class="comment-head">
@@ -251,7 +251,7 @@
                             <li>
                                 <div class="comment-main-level">
                                     <!-- Avatar -->
-                                    <div class="comment-avatar"><img src="img/fem.jpg" alt=""></div>
+                                    <div class="comment-avatar"><img src="img/fem.jpg" alt="" width="100px"></div>
                                     <!-- Contenedor del Comentario -->
                                     <div class="comment-box">
                                         <div class="comment-head">
@@ -286,7 +286,8 @@
         var div_head=document.createElement("div");
         div_head.classList.toggle("comment-main-level");
         var img=document.createElement('img');
-        img.src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg";
+        img.src="img/fem.jpg";
+        img.width="100";
         var div=document.createElement('div');
         div.classList.toggle("comment-avatar");
         var div2=document.createElement('div');
@@ -307,7 +308,7 @@
         div4.classList.toggle("comment-content");
         div4.innerHTML=document.getElementById('comentarios').value;
 
-        div_head.appendChild(div);
+        div_head.appendChild(div); 
         div.appendChild(img);
         div_head.appendChild(div2);
         div2.appendChild(div3);
