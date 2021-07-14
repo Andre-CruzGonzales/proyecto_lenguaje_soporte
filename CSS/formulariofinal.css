@@ -1,6 +1,6 @@
 * {
      box-sizing: border-box;
- } 
+} 
 body{
     margin: 0;
     font-family: sans-serif;
@@ -8,7 +8,6 @@ body{
     background-size: 100vw 100vh;
     background-attachment: fixed;
     font-weight: 800;
-    
 }
 .formulario{
     width: 500px;
@@ -74,16 +73,9 @@ body{
 #boton:hover {
     cursor: pointer;
 }
-@media (max-width:500px){
-    .formulario{
-        width: 100%;
-    }
-
 #gracias{
     text-align: center;
     color: white;
     font-size: 150px;
     background: rgba(0,0,0,0.4);
 }
-}
-
